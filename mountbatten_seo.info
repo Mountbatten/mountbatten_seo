@@ -1,7 +1,7 @@
 name = Mountbatten SEO
 description = Contains search engine optimization configurations
 core = 7.x
-package = Mountbattten
+package = Mountbatten
 dependencies[] = ctools
 dependencies[] = metatag
 dependencies[] = metatag_facebook
