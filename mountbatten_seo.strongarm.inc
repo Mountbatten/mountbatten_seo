@@ -27,64 +27,6 @@ function mountbatten_seo_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'search_config';
-  $strongarm->value = array(
-    'forms' => array(
-      'toggle_forms' => 0,
-      'move_keyword_search' => 0,
-      'advanced_populate' => 0,
-      'advanced_expand' => 'default',
-      'remove_containing_wrapper' => 'default',
-    ),
-    'fields' => array(
-      'containing_any' => array(
-        'remove' => 0,
-        'roles' => array(),
-      ),
-      'containing_phrase' => array(
-        'remove' => 0,
-        'roles' => array(),
-      ),
-      'containing_none' => array(
-        'remove' => 0,
-        'roles' => array(),
-      ),
-      'types' => array(
-        'remove' => 0,
-        'roles' => array(),
-        'filter' => array(),
-        'groupings' => array(),
-      ),
-      'category' => array(
-        'remove' => 0,
-        'roles' => array(),
-        'filter' => array(),
-        'widget' => 'textfield',
-      ),
-      'language' => array(
-        'remove' => 0,
-        'roles' => array(),
-      ),
-    ),
-    'restrictions' => array(
-      'admin_bypass' => 1,
-    ),
-    'results' => array(
-      'limit' => '10',
-    ),
-  );
-  $export['search_config'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'search_cron_limit';
-  $strongarm->value = '100';
-  $export['search_cron_limit'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_batch_limit';
   $strongarm->value = '100';
   $export['xmlsitemap_batch_limit'] = $strongarm;
